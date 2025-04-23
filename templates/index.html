@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head><title>RaptorQP2P UI</title></head>
+  <body>
+    <h1>RaptorQP2P Demo</h1>
+    <form method="post" enctype="multipart/form-data">
+      <h2>Seed a File</h2>
+      <input type="hidden" name="mode" value="seed">
+      <input type="file" name="file" required>
+      <button type="submit">Seed</button>
+    </form>
+    <form method="post">
+      <h2>Download by Info Hash</h2>
+      <input type="hidden" name="mode" value="leech">
+      <input type="text" name="info_hash" placeholder="info_hash" required>
+      <button type="submit">Download</button>
+    </form>
+  </body>
+</html>
