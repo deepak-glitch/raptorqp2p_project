@@ -1,5 +1,6 @@
 import os, hashlib
-from protocol import bdecode
+from protocol import bdecode, bencode
+
 
 class TorrentMeta:
     def __init__(self, torrent_file: str):

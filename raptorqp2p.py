@@ -1,5 +1,6 @@
 from raptorq import Encoder as RQEncoder, Decoder as RQDecoder
 
+
 class FileEncoder:
     def __init__(self, file_path, block_size=1_600_000, symbol_size=16_000, repair_ratio=1.0):
         data = open(file_path,"rb").read()
